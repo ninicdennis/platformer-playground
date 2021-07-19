@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/m5x7.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.223529, 0.223529, 0.223529, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="TextDialog" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="Text" type="RichTextLabel" parent="."]
+margin_left = 40.0
+margin_top = 496.0
+margin_right = 984.0
+margin_bottom = 592.0
+custom_styles/normal = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "Random Text Here"
+__meta__ = {
+"_edit_use_anchors_": false
+}
