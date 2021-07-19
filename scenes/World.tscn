@@ -156,4 +156,7 @@ position = Vector2( 56, 152 )
 [connection signal="on_allow_e_pressed" from="TextBoard" to="Player" method="_on_TextBoard_on_allow_e_pressed"]
 [connection signal="on_allow_e_pressed" from="TextBoard2" to="Player" method="_on_TextBoard_on_allow_e_pressed"]
 [connection signal="update_health" from="Spike-4/Spikes" to="." method="_on_Spikes_update_health"]
+[connection signal="update_health" from="Spike-4/Spikes2" to="." method="_on_Spikes_update_health"]
+[connection signal="update_health" from="Spike-4/Spikes3" to="." method="_on_Spikes_update_health"]
+[connection signal="update_health" from="Spike-4/Spikes4" to="." method="_on_Spikes_update_health"]
 [connection signal="update_health" from="Spikes" to="." method="_on_Spikes_update_health"]

@@ -95,7 +95,7 @@ animations = [ {
 "frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
 "loop": true,
 "name": "running",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
 "loop": false,
@@ -134,10 +134,11 @@ drag_margin_bottom = 1.0
 position = Vector2( 0.157486, 0 )
 frames = SubResource( 18 )
 animation = "idle"
+frame = 1
 playing = true
 
 [node name="DamageTimer" type="Timer" parent="."]
-wait_time = 0.3
+wait_time = 0.5
 one_shot = true
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
